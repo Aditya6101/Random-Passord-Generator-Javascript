@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #242424;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+  color: #3b6398;
+}
+
+input[type="number"] {
+  width: 5rem;
+  padding: 2px 4px;
+}
+
+.container {
+  background-color: #ddd;
+  box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  width: 50vw;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.result-container {
+  background-color: #eee;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+}
+
+.result-container .result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  background-color: #3b6398;
+  border-radius: 5px;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+  .result-container {
+    font-size: 14px;
+  }
+}
